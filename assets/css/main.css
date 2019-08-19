@@ -75,6 +75,11 @@ input, select, textarea {
 img {
   width: 100%;
   height: auto;
+  
+  /* make unselectable */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .videocontainer {
@@ -98,11 +103,6 @@ img {
 .imagecontainer {
   width: 80%;
   height: auto;
-  
-    /* make modal unselectable */
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 @media screen and (max-width:736px) {
@@ -136,12 +136,10 @@ img {
 	padding-right: 5px;
 }
 
-
 .toolstext {
 	margin: 0px;
 	padding: 0px;
 }
-
 
 .tableskills {
 	background-color: white;
@@ -3889,6 +3887,7 @@ img {
 
 				#intro h1 {
 					margin: auto;
+								margin-bottom: 30rem;
 					font-size: 3.25rem;
 					line-height: 1.1;
 				}
