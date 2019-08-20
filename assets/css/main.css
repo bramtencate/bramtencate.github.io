@@ -97,6 +97,8 @@ user-select: none; /* Standard */
  font-family: "Source Sans Pro", Helvetica, sans-serif;
  text-transform: uppercase;
  font-size: 80%;
+ 
+ cursor: pointer;
 }
 
 .videocontainer {

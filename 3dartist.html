@@ -16,20 +16,53 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a class="logo">3D Artist</a>
+						<a class="logo" id="a1">3D Artist</a>
+						<script>
+							if (window.localStorage.getItem('lang') == "nl") {
+								a1.innerHTML  = "3D Artiest";
+							}
+						</script>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index#header">About me</a></li>
-							<li><a href="developer">Software Developer</a></li>
-							<li class="active"><a href="3dartist">3D artist</a></li>
+							<li>
+								<a href="index#header" id="a2">About me</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a2.innerHTML  = "Over mij";
+									}
+								</script>
+							</li>
+							<li>
+								<a href="developer" id="a3">Software Developer</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a3.innerHTML  = "Software ontwikkelaar";
+									}
+								</script>
+							</li>
+							<li class="active">
+								<a href="3dartist" id="a4">3D artist</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a4.innerHTML  = "3D artiest";
+									}
+								</script>
+							</li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/agjtencate/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 							<li><a href="https://github.com/Brummos" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href=".\cv\CV_EN_BramtenCate.pdf" target="_blank" class="icon brands fa-wpforms"><span class="label">CV</span></a></li>
+							<li>
+								<a href=".\cv\CV_EN_BramtenCate.pdf" target="_blank" class="icon brands fa-wpforms" id="cvlink_top"><span class="label">CV</span></a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										cvlink_top.href  = "cv/CV_NL_BramtenCate.pdf";
+									}
+								</script>
+							</li>
 						</ul>
 					</nav>
 
@@ -39,12 +72,26 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<h2><aa>The Creative Side</aa></h2>
-									<pp>
+									<h2>
+										<aa id="aa1">The Creative Side</aa>
+										<script>
+											if (window.localStorage.getItem('lang') == "nl") {
+												aa1.innerHTML  = "De Creatieve Kant";
+											}
+										</script>
+									</h2>
+									<pp id="pp1">
 										As one of my hobbies is games and the culture around it. 
 										I tried to make it my work and studied Game Design and Development at the University of the Arts (HKU) in the Netherlands. 
 										Because I'm very visual, I specialized myself in 3D art.
 									</pp>
+									<script>
+										if (window.localStorage.getItem('lang') == "nl") {
+											pp1.innerHTML  = "Als een van mijn hobby's zijn games en de cultuur eromheen. " +
+															 "Ik probeerde er mijn werk van te maken en studeerde Game Design and Development aan de Hogeschool voor de Kunsten (HKU) in Nederland. " +
+															 "Omdat ik erg visueel ben, heb ik me gespecialiseerd in 3D-kunst.";
+										}
+									</script>
 								</header>
 								<a class="image main" oncontextmenu="return false"><img src="./images/3dartist/main.png" alt="" /></a>
 							</article>
@@ -53,42 +100,75 @@
 							<section class="posts">
 								<article>
 									<header>
-										<h2><a href="survivorisland">Survivor<br/>
-										Island</a></h2>
+										<h2>
+											<a href="survivorisland">Survivor<br/>Island</a>
+										</h2>
 									</header>
 									<a href="survivorisland" class="image fit" oncontextmenu="return false"><img src="./images/3dartist/si/survivorisland_thumb.png" alt="" /></a>
 									<ul class="actions special">
-										<li><a href="survivorisland" class="button">See More</a></li>
+										<li>
+											<a href="survivorisland" class="button" id="a5">See More</a>
+											<script>
+												if (window.localStorage.getItem('lang') == "nl") {
+													a5.innerHTML  = "Bekijk Meer";
+												}
+											</script>
+										</li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="planetending">Planet<br />
-										Ending</a></h2>
+										<h2>
+											<a href="planetending">Planet<br/>Ending</a>
+										</h2>
 									</header>
 									<a href="planetending" class="image fit" oncontextmenu="return false"><img src="./images/3dartist/pe/pe_thumb.png" alt="" /></a>
 									<ul class="actions special">
-										<li><a href="planetending" class="button">See More</a></li>
+										<li>
+											<a href="planetending" class="button" id="a6">See More</a>
+											<script>
+												if (window.localStorage.getItem('lang') == "nl") {
+													a6.innerHTML  = "Bekijk Meer";
+												}
+											</script>
+										</li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="leveldesign">Level<br />
-										Design</a></h2>
+										<h2>
+											<a href="leveldesign">Level<br/>Design</a>
+										</h2>
 									</header>
 									<a href="leveldesign" class="image fit" oncontextmenu="return false"><img src="./images/3dartist/ld/leveldesign_thumbnail2.png" alt="" /></a>
 									<ul class="actions special">
-										<li><a href="leveldesign" class="button">See More</a></li>
+										<li>
+											<a href="leveldesign" class="button" id="a7">See More</a>
+											<script>
+												if (window.localStorage.getItem('lang') == "nl") {
+													a7.innerHTML  = "Bekijk Meer";
+												}
+											</script>
+										</li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="playstationhome">Playstation<br />
-										Home</a></h2>
+										<h2>
+											<a href="playstationhome">Playstation<br />
+											Home</a>
+										</h2>
 									</header>
 									<a href="playstationhome" class="image fit" oncontextmenu="return false"><img src="./images/3dartist/ph/pshome_thumb.png" alt="" /></a>
 									<ul class="actions special">
-										<li><a href="playstationhome" class="button">See More</a></li>
+										<li>
+											<a href="playstationhome" class="button" id="a8">See More</a>
+											<script>
+												if (window.localStorage.getItem('lang') == "nl") {
+													a8.innerHTML  = "Bekijk Meer";
+												}
+											</script>
+										</li>
 									</ul>
 								</article>
 
@@ -100,7 +180,15 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>Bram ten Cate</li><li>&copy; Copyright 2019. All rights reserved.</li></ul>
+						<ul>
+							<li>Bram ten Cate</li>
+							<li id="li1">&copy; Copyright 2019. All rights reserved.</li>
+							<script>
+								if (window.localStorage.getItem('lang') == "nl") {
+									li1.innerHTML  = "&copy; Copyright 2019. Alle rechten voorbehouden.";
+								}
+							</script>
+						</ul>
 					</div>
 
 			</div>
