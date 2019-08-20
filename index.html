@@ -50,7 +50,7 @@
 								</script>
 							</li>
 							<li>
-								<a href="developer.html" id="a3">Software developer</a>
+								<a href="developer" id="a3">Software developer</a>
 								<script>
 									if (window.localStorage.getItem('lang') == "nl") {
 										a3.innerHTML  = "Software ontwikkelaar";
@@ -260,15 +260,14 @@
 								</ul>
 							</section>
 							
-							
-							
 							<section>
-								<select class="selectpicker" id="langSelector" onChange="onLangSelect()">
-									<option data-content='<span class="flag-icon flag-icon-us"></span> English' value="en">English</option>
-									<option  data-content='<span class="flag-icon flag-icon-mx"></span> Español' value="nl">Nederlands</option>
-								</select>
+								<div class="langcontainer">
+									<select class="selectpicker" id="langSelector" onChange="onLangSelect()">
+										<option data-content='<span class="flag-icon flag-icon-us"></span> English' value="en">English</option>
+										<option  data-content='<span class="flag-icon flag-icon-mx"></span> Español' value="nl">Nederlands</option>
+									</select>
+								</div>
 							</section>
-							
 							
 		
 		
@@ -299,7 +298,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/lang.js"></script>
-			<script src="assets/js/langsel.js"></script>
 			
 	</body>
 	

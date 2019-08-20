@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url(https://github.com/lipis/flag-icon-css/blob/master/css/flag-icon.min.css);
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -9,9 +10,9 @@ small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
+canvas, details, embed, figure, figcaption,)
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video 
+section, summary, time, mark, audio, video
 {
 	margin: 0;
 	padding: 0;
@@ -22,7 +23,7 @@ section, summary, time, mark, audio, video
 	}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section 
+footer, header, hgroup, menu, nav, section
 {
 	display: block;}
 
@@ -81,6 +82,21 @@ img {
 -moz-user-select: none; /* Firefox */
 -ms-user-select: none; /* IE10+/Edge */
 user-select: none; /* Standard */
+}
+
+.selectpicker {
+ width: 15%;
+ min-width: 150px;
+ height: auto;
+ margin-right: 0px;
+ float:right;
+ border-top: 0px;
+ border-bottom: 0px;
+ border-right: 0px;
+
+ font-family: "Source Sans Pro", Helvetica, sans-serif;
+ text-transform: uppercase;
+ font-size: 80%;
 }
 
 .videocontainer {
@@ -4700,7 +4716,7 @@ user-select: none; /* Standard */
 					}
 
 					#footer > section.split.contact > section:last-child {
-						padding: 3rem 4rem 4rem 4rem;
+						padding: 0rem 0rem 0rem 0rem ;
 					}
 
 					#footer > section.split.contact > section.alt {
@@ -4755,7 +4771,7 @@ user-select: none; /* Standard */
 						}
 
 						#footer > section.split.contact > section:last-child {
-							padding: 4rem;
+							padding: 0rem;
 						}
 
 				#footer form label,
@@ -4793,7 +4809,7 @@ user-select: none; /* Standard */
 					}
 
 					#footer > section.split.contact > section:last-child {
-						padding: 2rem;
+						padding: 0rem;
 					}
 
 		}
