@@ -16,20 +16,53 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a class="logo">Software Developer</a>
+						<a id="a1" class="logo">Software Developer</a>
+						<script>
+							if (window.localStorage.getItem('lang') == "nl") {
+								a1.innerHTML  = "Software Ontwikkelaar";
+							}
+						</script>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index#header">About me</a></li>
-							<li class="active"><a href="developer">Software Developer</a></li>
-							<li><a href="3dartist">3D artist</a></li>
+							<li>
+							<a href="index.html#header" id="a2">About me</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a2.innerHTML  = "Over mij";
+									}
+								</script>
+							</li>
+							<li class="active">
+								<a href="developer" id="a3">Software Developer</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a3.innerHTML  = "Software ontwikkelaar";
+									}
+								</script>
+							</li>
+							<li>
+								<a href="3dartist" id="a4">3D artist</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a4.innerHTML  = "3D artiest";
+									}
+								</script>
+							</li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/agjtencate/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 							<li><a href="https://github.com/Brummos" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href=".\cv\CV_EN_BramtenCate.pdf" target="_blank" class="icon brands fa-wpforms"><span class="label">CV</span></a></li>
+							<li>
+								<a href=".\cv\CV_EN_BramtenCate.pdf" target="_blank" class="icon brands fa-wpforms" id="cvlink_top"><span class="label">CV</span></a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										cvlink_top.href  = "cv/CV_NL_BramtenCate.pdf";
+									}
+								</script>
+							</li>
 						</ul>
 					</nav>
 
@@ -39,12 +72,26 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<h2><aa>The Thinking Side</aa></h2>
-									<pp>
+									<h2>
+										<aa id="aa1">The Thinking Side</aa>
+										<script>
+											if (window.localStorage.getItem('lang') == "nl") {
+												aa1.innerHTML  = "De Denkende Kant";
+											}
+										</script>
+									</h2>
+									<pp id="pp1">
 										I am a self-taught, full stack developer. 
 										Mostly focused on the back end. But my passion for UX design is growing every day. 
 										Currently I am learning more about UX design and eventually I want to incorporate this further into my designs.
 									</pp>
+									<script>
+										if (window.localStorage.getItem('lang') == "nl") {
+											pp1.innerHTML  = "Ik ben een autodidact, full-stack ontwikkelaar. " +
+															 "Meestal gericht op de backend. Maar mijn passie voor UX-design groeit elke dag. " +
+															 "Momenteel leer ik meer over UX-design en uiteindelijk wil ik dit verder in mijn ontwerpen opnemen.";
+										}
+									</script>
 								</header>
 								<a class="image main" oncontextmenu="return false"><img src="./images/developer/main.png" alt="" /></a>
 							</article>
@@ -53,22 +100,49 @@
 							<section class="posts">
 								<article>
 									<header>
-										<h2><a href="xmlrecognition">XML<br />
-										Recognition</a></h2>
+										<h2>
+											<a href="xmlrecognition" id="a5">XML<br/>Recognition</a>
+											<script>
+												if (window.localStorage.getItem('lang') == "nl") {
+													a5.innerHTML  = "XML<br />Herkenning";
+												}
+											</script>
+										</h2>
 									</header>
 									<a href="xmlrecognition" class="image fit" oncontextmenu="return false"><img src="./images/developer/xr/xmlrecog_thumb.png" alt="" /></a>
 									<ul class="actions special">
-										<li><a href="xmlrecognition" class="button">See More</a></li>
+										<li>
+											<a href="xmlrecognition" class="button" id="a7">See More</a>
+											<script>
+												if (window.localStorage.getItem('lang') == "nl") {
+													a7.innerHTML  = "Bekijk Meer";
+												}
+											</script>
+										</li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="appicons">Application<br />
-										icons</a></h2>
+										<h2>
+											<a href="appicons" id="a6">Application<br/>icons</a>
+											<script>
+													if (window.localStorage.getItem('lang') == "nl") {
+														a6.innerHTML  = "Applicatie<br/>iconen";
+													}
+											</script>
+										</h2>
+										
 									</header>
 									<a href="appicons" class="image fit" oncontextmenu="return false"><img src="./images/developer/ai/appicons_thumb.png" alt="" /></a>
 									<ul class="actions special">
-										<li><a href="appicons" class="button">See More</a></li>
+										<li>
+											<a href="appicons" class="button" id="a8">See More</a>
+											<script>
+												if (window.localStorage.getItem('lang') == "nl") {
+													a8.innerHTML  = "Bekijk Meer";
+												}
+											</script>
+										</li>
 									</ul>
 								</article>
 
@@ -80,7 +154,15 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>Bram ten Cate</li><li>&copy; Copyright 2019. All rights reserved.</li></ul>
+						<ul>
+							<li>Bram ten Cate</li>
+							<li id="li1">&copy; Copyright 2019. All rights reserved.</li>
+							<script>
+								if (window.localStorage.getItem('lang') == "nl") {
+									li1.innerHTML  = "&copy; Copyright 2019. Alle rechten voorbehouden.";
+								}
+							</script>
+						</ul>
 					</div>
 
 			</div>
