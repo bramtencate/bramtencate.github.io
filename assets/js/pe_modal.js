@@ -1,6 +1,11 @@
 // Get the modal
 var modal = document.getElementById("myModal");
 
+modal.onclick = function(){
+  modal.style.display = "none";
+  $("body").css("overflow", "auto");
+}
+
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("firstimgPE");
 var modalImg = document.getElementById("img01");
