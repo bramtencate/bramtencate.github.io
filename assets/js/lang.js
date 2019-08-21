@@ -1,9 +1,5 @@
 var e = document.getElementById("langSelector");
 
-if (window.localStorage.getItem('lang') != null) {
-	e.value = window.localStorage.getItem('lang');
-}
-
 function onLangSelect() {
 	window.localStorage.setItem('lang', e.options[e.selectedIndex].value);
 	setText();

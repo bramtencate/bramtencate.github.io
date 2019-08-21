@@ -266,6 +266,11 @@
 										<option data-content='<span class="flag-icon flag-icon-us"></span> English' value="en">English</option>
 										<option  data-content='<span class="flag-icon flag-icon-mx"></span> Nederlands' value="nl">Nederlands</option>
 									</select>
+									<script>
+										if (window.localStorage.getItem('lang') != null) {
+											langSelector.value = window.localStorage.getItem('lang');
+										}
+									</script>
 								</div>
 							</section>
 							

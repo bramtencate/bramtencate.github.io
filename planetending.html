@@ -16,20 +16,53 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a class="logo">3D Artist</a>
+						<a class="logo" id="a1">3D Artist</a>
+						<script>
+							if (window.localStorage.getItem('lang') == "nl") {
+								a1.innerHTML  = "3D Artiest";
+							}
+						</script>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index#header">About me</a></li>
-							<li><a href="developer">Software Developer</a></li>
-							<li class="active"><a href="3dartist">3D artist</a></li>
+							<li>
+								<a href="index#header" id="a2">About me</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a2.innerHTML  = "Over mij";
+									}
+								</script>
+							</li>
+							<li>
+								<a href="developer" id="a3">Software Developer</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a3.innerHTML  = "Software ontwikkelaar";
+									}
+								</script>
+							</li>
+							<li class="active">
+								<a href="3dartist" id="a4">3D artist</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a4.innerHTML  = "3D artiest";
+									}
+								</script>
+							</li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/agjtencate/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 							<li><a href="https://github.com/Brummos" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href=".\cv\CV_EN_BramtenCate.pdf" target="_blank" class="icon brands fa-wpforms"><span class="label">CV</span></a></li>
+							<li>
+								<a href=".\cv\CV_EN_BramtenCate.pdf" target="_blank" class="icon brands fa-wpforms" id="cvlink_top"><span class="label">CV</span></a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										cvlink_top.href  = "cv/CV_NL_BramtenCate.pdf";
+									}
+								</script>
+							</li>
 						</ul>
 					</nav>
 
@@ -40,8 +73,12 @@
 						<section class="post">
 							<header class="major">
 								<h1>Planet Ending</h1>
-								<p>3D models for a prototype of a classic arcade third-person shooter.<br/>
-								The goal here was to create a game where the player controls how the game behaves.</p>
+								<p id="p1">3D models for a prototype of a classic arcade third-person shooter.<br/>The goal here was to create a game where the player controls how the game behaves.</p>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										p1.innerHTML  = "3D-modellen voor een prototype van een klassieke arcade third-person shooter.<br/>Het doel was om een ​​game te maken waarbij de speler bepaalt hoe de game zich gedraagt.";
+									}
+								</script>
 							</header>
 
 							<!-- The Modal -->
@@ -83,7 +120,14 @@
 						
 						<div>						
 							<ul class="actions special">
-								<li><a href="3dartist" class="button">Back</a></li>
+								<li>
+									<a href="3dartist" class="button" id="a5">Back</a>
+									<script>
+										if (window.localStorage.getItem('lang') == "nl") {
+											a5.innerHTML  = "Terug";
+										}
+									</script>
+								</li>
 							</ul>
 						</div>
 
@@ -91,7 +135,15 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>Bram ten Cate</li><li>&copy; Copyright 2019. All rights reserved.</li></ul>
+						<ul>
+							<li>Bram ten Cate</li>
+							<li id="li1">&copy; Copyright 2019. All rights reserved.</li>
+							<script>
+								if (window.localStorage.getItem('lang') == "nl") {
+									li1.innerHTML  = "&copy; Copyright 2019. Alle rechten voorbehouden.";
+								}
+							</script>
+						</ul>
 					</div>
 
 			</div>
@@ -106,6 +158,7 @@
 		<script src="./assets/js/main.js"></script>
 		<script src="./assets/js/slides.js"></script>
 		<script src="./assets/js/pe_modal.js"></script>
+		
 	</body>
 	
 </html>
