@@ -16,20 +16,53 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a class="logo">Software Developer</a>
+						<a class="logo"  id="a1">Software Developer</a>
+						<script>
+							if (window.localStorage.getItem('lang') == "nl") {
+								a1.innerHTML  = "Software ontwikkelaar";
+							}
+						</script>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index#header">About me</a></li>
-							<li class="active"><a href="developer">Software Developer</a></li>
-							<li><a href="3dartist">3D artist</a></li>
+							<li>
+								<a href="index#header" id="a2">About me</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a2.innerHTML  = "Over mij";
+									}
+								</script>
+							</li>
+							<li class="active">
+								<a href="developer" id="a3">Software Developer</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a3.innerHTML  = "Software ontwikkelaar";
+									}
+								</script>
+							</li>
+							<li>
+								<a href="3dartist" id="a4">3D artist</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a4.innerHTML  = "3D artiest";
+									}
+								</script>
+							</li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/agjtencate/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 							<li><a href="https://github.com/Brummos" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href=".\cv\CV_EN_BramtenCate.pdf" target="_blank" class="icon brands fa-wpforms"><span class="label">CV</span></a></li>
+							<li>
+								<a href=".\cv\CV_EN_BramtenCate.pdf" target="_blank" class="icon brands fa-wpforms" id="cvlink_top"><span class="label">CV</span></a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										cvlink_top.href  = "cv/CV_NL_BramtenCate.pdf";
+									}
+								</script>
+							</li>
 						</ul>
 					</nav>
 
@@ -39,9 +72,18 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>XML Recognition</h1>
-									<p>A system to fully automate the processing of XML invoices.<br/>
-									It even has the potential to automate every XML.</p>
+									<h1 id="h1">XML Recognition</h1>
+									<script>
+										if (window.localStorage.getItem('lang') == "nl") {
+											h1.innerHTML  = "XML Herkenning";
+										}
+									</script>
+									<p id="p1">A system to fully automate the processing of XML invoices.<br/>It even has the potential to automate every XML.</p>
+									<script>
+										if (window.localStorage.getItem('lang') == "nl") {
+											p1.innerHTML  = "Een systeem om de verwerking van XML-facturen volledig te automatiseren.<br/>Het heeft zelfs het potentieel om elke XML te automatiseren.";
+										}
+									</script>
 								</header>
 								
 								<div class="source">
@@ -49,7 +91,12 @@
 										<aa class="fas fa-lock"></aa>
 									</div>
 									<div>
-										<p> Source: Private</p>
+										<p id="p2"> Source: Private</p>
+										<script>
+											if (window.localStorage.getItem('lang') == "nl") {
+												p2.innerHTML  = " Bron: Privé";
+											}
+										</script>
 									</div>
 								</div>
 								
@@ -69,8 +116,13 @@
 								</center>
 
 								<br/>
-								<p>A system that automatically recognizes XML types and reads the XML data. The recognition is based on XML schema's like XSD and DTD. The reading is done using a single map.</p>
-							
+								<p id="p3">A system that automatically recognizes XML types and reads the XML data. The recognition is based on XML schema's like XSD and DTD. The reading is done using a single map.</p>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										p3.innerHTML  = "Een systeem dat automatisch XML-typen herkent en de XML-gegevens leest. De herkenning is gebaseerd op XML-schema's zoals XSD en DTD. Het lezen gebeurt met een enkele map.";
+									}
+								</script>
+								
 								<div class="tools" >
 									<div>
 										<aa class="fas fa-tools"></aa>
@@ -102,7 +154,14 @@
 							
 							<div>
 								<ul class="actions special">
-									<li><a href="developer" class="button">Back</a></li>
+									<li>
+										<a href="developer" class="button" id="li2">Back</a>
+										<script>
+											if (window.localStorage.getItem('lang') == "nl") {
+												li2.innerHTML  = "Terug";
+											}
+										</script>
+									</li>
 								</ul>
 							</div>
 
@@ -110,7 +169,15 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>Bram ten Cate</li><li>&copy; Copyright 2019. All rights reserved.</li></ul>
+						<ul>
+							<li>Bram ten Cate</li>
+							<li id="li1">&copy; Copyright 2019. All rights reserved.</li>
+							<script>
+								if (window.localStorage.getItem('lang') == "nl") {
+									li1.innerHTML  = "&copy; Copyright 2019. Alle rechten voorbehouden.";
+								}
+							</script>
+						</ul>
 					</div>
 
 			</div>
@@ -125,5 +192,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="./assets/js/xr_modal.js"></script>
+			
 	</body>
+	
 </html>
