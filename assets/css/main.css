@@ -379,7 +379,7 @@ user-select: none; /* Standard */
   margin: auto;
   display: block;
   width: 60%;
-  max-width: 60%;
+  max-width: 1000px;
 }
 
 /* Caption of Modal Image */
