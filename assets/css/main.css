@@ -352,7 +352,7 @@ user-select: none; /* Standard */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 40; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -4057,6 +4057,7 @@ user-select: none; /* Standard */
 	}
 	
 	.sticky {
+
 		position: fixed;
 		top: 0;
 		left: 0;
