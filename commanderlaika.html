@@ -6,7 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
 		<link rel="icon" href="./images/web_icon.png">
 	</head>
 	<body class="is-preload">
@@ -72,19 +72,33 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1 id="h1">Application Icons</h1>
+									<h1 id="h1">XML Recognition</h1>
 									<script>
 										if (window.localStorage.getItem('lang') == "nl") {
-											h1.innerHTML  = "Applicatie Iconen";
+											h1.innerHTML  = "XML Herkenning";
 										}
 									</script>
-									<p id="p1">A more stylized icon set for a for client application to make it more modern.<br/>Different colors are used to give a familiar feeling for each application.</p>
+									<p id="p1">A system to fully automate the processing of XML invoices.<br/>It even has the potential to automate every XML.</p>
 									<script>
 										if (window.localStorage.getItem('lang') == "nl") {
-											p1.innerHTML  = "Een meer gestileerde icon set voor een voor client-applicatie om het moderner te maken.<br/>Verschillende kleuren worden gebruikt om een ​​vertrouwd gevoel voor elke applicatie te geven.";
+											p1.innerHTML  = "Een systeem om de verwerking van XML-facturen volledig te automatiseren.<br/>Het heeft zelfs het potentieel om elke XML te automatiseren.";
 										}
 									</script>
 								</header>
+								
+								<div class="source">
+									<div>
+										<aa class="icon brands fa-github"></aa>
+									</div>
+									<div>
+										<p id="p2"> Source: Link to GitHub</p>
+										<script>
+											if (window.localStorage.getItem('lang') == "nl") {
+												p2.innerHTML  = " Bron: Privé";
+											}
+										</script>
+									</div>
+								</div>
 								
 								<!-- The Modal -->
 								<div id="myModal" class="modal" oncontextmenu="return false">
@@ -96,31 +110,37 @@
 								<center>
 									<div class="imagecontainer">
 										<a class="image fit" oncontextmenu="return false">
-											<img id="aiimage" src="./images/developer/ai/appicons.png" alt="" />
+											<img id="main_img" src="./images/developer/xr/xmlrecognition.png" alt="" />
 										</a>
 									</div>
 								</center>
 
-								<br />
-								<!-- <p>Donec eget ex magna.</p> -->
-							
+								<br/>
+								<p id="p3">A system that automatically recognizes XML types and reads the XML data. The recognition is based on XML schema's like XSD and DTD. The reading is done using a single map.</p>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										p3.innerHTML  = "Een systeem dat automatisch XML-typen herkent en de XML-gegevens leest. De herkenning is gebaseerd op XML-schema's zoals XSD en DTD. Het lezen gebeurt met een enkele map.";
+									}
+								</script>
+								
 								<div class="tools" >
 									<div>
 										<aa class="fas fa-tools"></aa>
 									</div>
 									<div>
-										<p class="toolstext">Adobe Photoshop</p>
+										<p class="toolstext">JavaScript</p>
 									</div>
 								</div>
-								<div class="tools">
+								
+								<div class="tools" >
 									<div>
 										<aa class="fas fa-tools"></aa>
 									</div>
 									<div>
-										<p class="toolstext">Axialis IconWorkshop</p>
+										<p class="toolstext">Photoshop</p>
 									</div>
 								</div>
-							
+					
 							</section>
 							
 							<div>
@@ -155,15 +175,16 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/ai_modal.js"></script>
+			<script src="assets/js/modal.js"></script>
 			<script src="assets/js/navbar.js"></script>
-
+			
 	</body>
 	
 </html>
