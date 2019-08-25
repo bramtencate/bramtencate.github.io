@@ -14,7 +14,7 @@ img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
-  ("body").css("overflow", "hidden");
+  $("body").css("overflow", "hidden");
 }
 
 // Get the <span> element that closes the modal

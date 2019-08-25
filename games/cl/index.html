@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WellDone</title>
+    <style>
+        canvas{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #startBtn {
+            position: absolute;
+            top: 400px;
+            left: 250px;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+        }
+        #optionsBtn {
+            position: absolute;
+            top: 460px;
+            left: 250px;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+        }
+        #pauseOptionsBtn {
+            position: absolute;
+            display: none;
+            top: 460px;
+            left: 1100px;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            z-index: 2;
+        }
+        #pauseBackBtn {
+            position: absolute;
+            display: none;
+            top: 520px;
+            left: 1100px;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            z-index: 2;
+        }
+        #optionsBackBtn {
+            position: absolute;
+            display: none;
+            top: 460px;
+            left: 250px;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+        }
+        #playMusicBtn {
+            position: absolute;
+            top: 1000px;
+            left: 2000px;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+        }
+        #volumeSlider {
+            position: absolute;
+            display: none;
+            top: 520px;
+            left: 250px;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+        }
+        #musicVolumeSlider {
+            position: absolute;
+            display: none;
+            top: 580px;
+            left: 250px;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+        }
+        #canvas_pause {
+            position: fixed; /* Sit on top of the page content */
+            display: none; /* Hidden by default */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+            z-index: 1;/*!* Specify a stack order in case you're using a different order for other elements*/
+            cursor: pointer; /* Add a pointer on hover */
+        }
+        #nameField {
+             position: absolute;
+             display: none;
+             top: 520px;
+             left: 1100px;
+             width: 200px;
+             height: 50px;
+             font-size: 20px;
+             z-index: 2;
+         }
+        #startGameBtn {
+            position: absolute;
+            display: none;
+            top: 580px;
+            left: 1100px;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body onLoad="preloader()">
+
+<!--<canvas id="ui_enemies" width="400" height="400" style="border: 1px solid black"></canvas>-->
+<!--<canvas id="canvas_arrow" width="400" height="400" style="border: 1px solid black"></canvas>-->
+
+<canvas id="canvas_background" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_stars" width="2400" height="1200" style="border: 1px solid black"></canvas>
+
+<canvas id="canvas_planet" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_meteor" width="2400" height="1200" style="border: 1px solid black"></canvas>
+
+<canvas id="canvas_explosions" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_enemies" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_dicklets" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_circles" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_rocket" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_player" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_avatar" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_bone" width="2400" height="1200" style="border: 1px solid black"></canvas>
+
+<canvas id="canvas_skills" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_skill_cd1" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_skill_cd2" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_skill_cd3" width="2400" height="1200" style="border: 1px solid black"></canvas>
+
+<canvas id="canvas_shield" width="2400" height="1200" style="border: 1px solid black"></canvas>
+<canvas id="canvas_pause" width="2400" height="1200" style="border: 1px solid black"></canvas>
+
+<button type="button" id="startBtn" onclick="enterName()">Play</button>s
+<button type="button" id="optionsBtn" onclick="showOptions()">Options</button>
+<button type="button" id="optionsBackBtn" onclick="backOptions()">Back</button>
+<button type="button" id="playMusicBtn" value="muted" onclick="playMusic()">Play music</button>
+<button type="button" id="pauseOptionsBtn" onclick="">Options</button>
+<button type="button" id="pauseBackBtn" onclick="exitGame()">Exit</button>
+<button type="button" id="startGameBtn" onclick="start()">Start</button>
+
+<input id="volumeSlider" type="range" min="0" max="100" value="100" step="1"></input>
+<input id="musicVolumeSlider" type="range" min="0" max="100" value="100" step="1"></input>
+
+<input type="text" id="nameField" value=""><br>
+
+<section id="controls-wrapper">
+    <select id="masses-list">
+        <option value="0.000003003">Earth</option>
+    </select>
+</section>
+
+<script src="js/gui/canvasContext.js"></script>
+<script src="js/gui/skillbar/skillCooldown.js"></script>
+<script src="js/gui/skillbar/skillbar.js"></script>
+<script src="js/gui/avatar/avatar.js"></script>
+<script src="js/world/star.js"></script>
+<script src="js/effects/explosion.js"></script>
+<script src="js/effects/smokeParticle.js"></script>
+<script src="js/skills/meteor.js"></script>
+<script src="js/effects/smoke.js"></script>
+<script src="js/skills/bodies.js"></script>
+<script src="js/skills/bone.js"></script>
+<script src="js/world/planet.js"></script>
+<script src="js/enemies/rocket.js"></script>
+<script src="js/enemies/diglet.js"></script>
+<script src="js/skills/shield.js"></script>
+<script src="js/player/player.js"></script>
+
+<script src="js/game.js"></script>
+<script src="js/gui/listeners.js"></script>
+<script src="js/gui/buttons.js"></script>
+
+</body>
+</html>

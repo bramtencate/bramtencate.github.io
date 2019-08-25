@@ -17,8 +17,6 @@ img.onclick = function(){
   $("body").css("overflow", "hidden");
 }
 
-
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
