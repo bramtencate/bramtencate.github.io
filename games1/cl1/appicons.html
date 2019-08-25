@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Bram ten Cate</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="./images/web_icon.png">
+	</head>
+	<body class="is-preload">
+	
+		<!-- The Modal -->
+			<div id="myModal" class="modal" oncontextmenu="return false">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a class="logo"  id="a1">Software Developer</a>
+						<script>
+							if (window.localStorage.getItem('lang') == "nl") {
+								a1.innerHTML  = "Software ontwikkelaar";
+							}
+						</script>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li>
+								<a href="index#header" id="a2">About me</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a2.innerHTML  = "Over mij";
+									}
+								</script>
+							</li>
+							<li class="active">
+								<a href="developer" id="a3">Software Developer</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a3.innerHTML  = "Software ontwikkelaar";
+									}
+								</script>
+							</li>
+							<li>
+								<a href="3dartist" id="a4">3D artist</a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										a4.innerHTML  = "3D artiest";
+									}
+								</script>
+							</li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/agjtencate/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/Brummos" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li>
+								<a href=".\cv\CV_EN_BramtenCate.pdf" target="_blank" class="icon brands fa-wpforms" id="cvlink_top"><span class="label">CV</span></a>
+								<script>
+									if (window.localStorage.getItem('lang') == "nl") {
+										cvlink_top.href  = "cv/CV_NL_BramtenCate.pdf";
+									}
+								</script>
+							</li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1 id="h1">Application Icons</h1>
+									<script>
+										if (window.localStorage.getItem('lang') == "nl") {
+											h1.innerHTML  = "Applicatie Iconen";
+										}
+									</script>
+									<p id="p1">A more stylized icon set for a for client application to make it more modern.<br/>Different colors are used to give a familiar feeling for each application.</p>
+									<script>
+										if (window.localStorage.getItem('lang') == "nl") {
+											p1.innerHTML  = "Een meer gestileerde icon set voor een voor client-applicatie om het moderner te maken.<br/>Verschillende kleuren worden gebruikt om een ​​vertrouwd gevoel voor elke applicatie te geven.";
+										}
+									</script>
+								</header>
+
+								<center>
+									<div class="imagecontainer">
+										<a class="image fit" oncontextmenu="return false">
+											<img id="aiimage" src="./images/developer/ai/appicons.png" alt="" />
+										</a>
+									</div>
+								</center>
+
+								<br />
+								<!-- <p>Donec eget ex magna.</p> -->
+							
+								<div class="tools" >
+									<div>
+										<aa class="fas fa-tools"></aa>
+									</div>
+									<div>
+										<p class="toolstext">Adobe Photoshop</p>
+									</div>
+								</div>
+								<div class="tools">
+									<div>
+										<aa class="fas fa-tools"></aa>
+									</div>
+									<div>
+										<p class="toolstext">Axialis IconWorkshop</p>
+									</div>
+								</div>
+							
+							</section>
+							
+							<div>
+								<ul class="actions special">
+									<li>
+										<a href="developer" class="button" id="li2">Back</a>
+										<script>
+											if (window.localStorage.getItem('lang') == "nl") {
+												li2.innerHTML  = "Terug";
+											}
+										</script>
+									</li>
+								</ul>
+							</div>
+
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul>
+							<li>Bram ten Cate</li>
+							<li id="li1">&copy; Copyright 2019. All rights reserved.</li>
+							<script>
+								if (window.localStorage.getItem('lang') == "nl") {
+									li1.innerHTML  = "&copy; Copyright 2019. Alle rechten voorbehouden.";
+								}
+							</script>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/ai_modal.js"></script>
+			<script src="assets/js/navbar.js"></script>
+
+	</body>
+	
+</html>
