@@ -70,6 +70,24 @@ input, select, textarea {
 	appearance: none;
 }
 
+.frame
+{
+    width: 2402px;
+    height: 1202px;
+    border: 0;
+
+
+    -ms-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+	
+		display:block;
+	align:center;
+}
+
+
 img {
   width: 100%;
   height: auto;

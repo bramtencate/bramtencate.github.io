@@ -9,15 +9,13 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
 		<link rel="icon" href="./images/web_icon.png">
 	</head>
+	
 	<body class="is-preload">
 									
 		<!-- The Modal -->
-			<div id="myModal" class="modal" oncontextmenu="return false">
-				<span class="close">&times;</span>
-				<img class="modal-content" id="img01">
-				<div id="caption"></div>
+			<div id="myModal" class="modal" oncontextmenu="return false" align="center">
+				<iframe class="frame" id="inlineFrame" title="Commander Laika" src="https://bramtencate.github.io/games/cl/index.html"></iframe>
 			</div>
-								
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -77,26 +75,16 @@
 				<!-- Main -->
 					<div id="main">
 
-
-<iframe id="inlineFrameExample"
-    title="Inline Frame Example"
-    width="300"
-    height="200"
-    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
-</iframe>
-
-
-
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1 id="h1">XML Recognition</h1>
+									<h1 id="h1">Commander Laika</h1>
 									<script>
 										if (window.localStorage.getItem('lang') == "nl") {
 											h1.innerHTML  = "XML Herkenning";
 										}
 									</script>
-									<p id="p1">A system to fully automate the processing of XML invoices.<br/>It even has the potential to automate every XML.</p>
+									<p id="p1">A simple space game where you play laika.<br/>It sort of aracde.</p>
 									<script>
 										if (window.localStorage.getItem('lang') == "nl") {
 											p1.innerHTML  = "Een systeem om de verwerking van XML-facturen volledig te automatiseren.<br/>Het heeft zelfs het potentieel om elke XML te automatiseren.";
@@ -106,22 +94,25 @@
 								
 								<div class="source">
 									<div>
-										<aa class="icon brands fa-github"></aa>
+										<aa class="fas fa-code"></aa>
 									</div>
 									<div>
-										<p id="p2"> Source: Link to GitHub</p>
+										<p id="p2"> Source: </p>
 										<script>
 											if (window.localStorage.getItem('lang') == "nl") {
-												p2.innerHTML  = " Bron: Privé";
+												p2.innerHTML  = " Bron: ";
 											}
 										</script>
+									</div>
+									<div>
+										<a href="https://github.com/Brummos/WellDone" target="_blank" class="icon brands fa-github"></a>
 									</div>
 								</div>
 
 								<center>
 									<div class="imagecontainer">
 										<a class="image fit" oncontextmenu="return false">
-											<img id="main_img" src="./images/developer/xr/xmlrecognition.png" alt="" />
+											<img id="main_img" src="./images/developer/cl/laika.png" alt="" />
 										</a>
 									</div>
 								</center>
@@ -193,7 +184,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/modal.js"></script>
+			<script src="assets/js/gamemodal.js"></script>
 			<script src="assets/js/navbar.js"></script>
 			
 	</body>
