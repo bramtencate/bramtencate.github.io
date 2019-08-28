@@ -11,12 +11,15 @@
 	</head>
 	
 	<body class="is-preload">
-									
+	
 		<!-- The Modal -->
-			<div id="myModal" class="modal" oncontextmenu="return false" align="center">
-				<iframe class="frame" id="inlineFrame" title="Commander Laika" src="https://bramtencate.github.io/games/cl/index.html"></iframe>
+			<div id="myModal" class="modal" >
+				<span class="close">&times;</span>
+				<div id="iframe-container">
+					<iframe scrolling="no" seamless="seamless" class="frame" id="inlineFrame" title="Commander Laika" src="https://bramtencate.github.io/games/cl/index.html"></iframe>
+				</div>
 			</div>
-
+			
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -41,7 +44,7 @@
 									}
 								</script>
 							</li>
-							<li class="active">
+							<li class="active"> 
 								<a href="developer" id="a3">Software Developer</a>
 								<script>
 									if (window.localStorage.getItem('lang') == "nl") {
@@ -84,10 +87,10 @@
 											h1.innerHTML  = "XML Herkenning";
 										}
 									</script>
-									<p id="p1">A simple space game where you play laika.<br/>It sort of aracde.</p>
+									<p id="p1">Trapped in space, it's this dogs last stand against the forces of the Universe.<br/>Your goal will be quite challenging as you will have help Laike save her bones from all kinds of enemies.</p>
 									<script>
 										if (window.localStorage.getItem('lang') == "nl") {
-											p1.innerHTML  = "Een systeem om de verwerking van XML-facturen volledig te automatiseren.<br/>Het heeft zelfs het potentieel om elke XML te automatiseren.";
+											p1.innerHTML  = "Gevangen in de ruimte, het is deze honden laatste stand tegen de krachten van het Universum.<br/>Je doel zal behoorlijk uitdagend zijn omdat je Laike zult helpen haar botten te redden van allerlei vijanden.";
 										}
 									</script>
 								</header>
