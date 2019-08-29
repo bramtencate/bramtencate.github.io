@@ -91,12 +91,20 @@ input, select, textarea {
 img {
   width: 100%;
   height: auto;
-  
-  /* make unselectable */
+
+  -khtml-user-select: none;
+  -o-user-select: none;
   -webkit-user-select: none; /* Safari */        
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
+  
+  -khtml-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none; /* Safari */        
+  -moz-user-drag: none; /* Firefox */
+  -ms-user-drag: none; /* IE10+/Edge */
+  user-drag: none; /* Standard */
 }
 
 .selectpicker {
