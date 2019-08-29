@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" href="./images/web_icon.png">
+		<script src="assets/js/goto_header.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -36,13 +37,12 @@
 							}
 						</script>
 					</header>
-										
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
 							<li class="active">
-								<a href="#header" id="a2">About me</a>
+								<a onclick="gotoHeader()" id="a2" style="cursor: pointer;">About me</a>
 								<script>
 									if (window.localStorage.getItem('lang') == "nl") {
 										a2.innerHTML  = "Over mij";
