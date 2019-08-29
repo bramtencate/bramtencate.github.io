@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" href="./images/web_icon.png">
+		<script src="assets/js/goto_header.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -44,7 +45,7 @@
 								</script>
 							</li>
 							<li class="active">
-								<a href="3dartist" id="a4">3D artist</a>
+								<a onclick="gotoHeader()" style="cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" id="a4">3D artist</a>
 								<script>
 									if (window.localStorage.getItem('lang') == "nl") {
 										a4.innerHTML  = "3D artiest";
