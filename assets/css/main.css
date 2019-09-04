@@ -4079,11 +4079,14 @@ img {
 		max-width: 72rem;
 		margin: -4rem auto 0 auto;
 	}
-	
+
 	.sticky {
 		top: 0;
 		left: 0;
 		right: 0;
+	}
+	.sticky + .content {
+		padding-top: 60px;
 	}
 
 		#nav ul.divided li {
