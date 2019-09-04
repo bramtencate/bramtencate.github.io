@@ -408,6 +408,12 @@ img {
   max-width: 1000px;
 }
 
+@media screen and (max-width: 736px) {
+	.modal-content {
+		max-width: 100%;
+	}
+}
+
 /* Caption of Modal Image */
 #caption {
   margin: auto;
